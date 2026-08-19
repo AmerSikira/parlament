@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parlament | Nargila Caffe Bar Kakanj</title>
+  <meta name="description" content="Parlament je nargila caffe bar u centru Kaknja sa nargilama, kafom, sokovima, mineralnim vodama, kolačima i rezervacijama stolova.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Parlament početna">Parlament</a>
+
+    <button class="nav-toggle" type="button" aria-label="Otvori navigaciju" aria-expanded="false">
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" aria-label="Glavna navigacija">
+      <a href="#home">Početna</a>
+      <a href="#hours">O nama</a>
+      <a href="#atmosfera">Atmosfera</a>
+      <a href="#menu">Meni</a>
+      <a href="#reservations">Rezervacije</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="social-links" aria-label="Društvene mreže">
+        <a href="#contact" aria-label="Instagram">Ig</a>
+        <a href="#contact" aria-label="Facebook">Fb</a>
+        <a href="#contact" aria-label="TikTok">Tk</a>
+      </div>
+      <a class="outline-button header-booking" href="#reservations">Rezerviši sto</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-label="Parlament nargila caffe bar Kakanj">
+      <div class="hero-controls" aria-hidden="true">
+        <span class="hero-arrow hero-arrow-prev"></span>
+        <span class="hero-arrow hero-arrow-next"></span>
+      </div>
+      <div class="hero-content reveal is-visible">
+        <p class="eyebrow">Nargila caffe bar u centru Kaknja</p>
+        <h1>Parlament Kakanj</h1>
+        <a class="outline-button" href="#menu">Pogledaj meni</a>
+      </div>
+    </section>
+
+    <section class="booking-strip" id="reservations" aria-label="Rezervacije stolova">
+      <form class="booking-form" id="booking-form">
+        <label>
+          <span>Broj gostiju</span>
+          <select name="guests" aria-label="Broj gostiju" required>
+            <option>2 osobe</option>
+            <option>3 osobe</option>
+            <option>4 osobe</option>
+            <option>6 osoba</option>
+          </select>
+        </label>
+        <label>
+          <span>Datum</span>
+          <input type="date" name="date" aria-label="Datum rezervacije" required>
+        </label>
+        <label>
+          <span>Vrijeme</span>
+          <input type="time" name="time" value="20:00" aria-label="Vrijeme rezervacije" required>
+        </label>
+        <button class="outline-button" type="submit">Pošalji rezervaciju</button>
+      </form>
+      <p class="booking-status" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="hours-section reveal" id="hours">
+      <article class="hours-copy">
+        <p class="eyebrow">Dobro došli</p>
+        <h2>Radno vrijeme</h2>
+        <dl>
+          <div>
+            <dt>Ponedjeljak - Nedjelja</dt>
+            <dd>07:00 - 23:00</dd>
+          </div>
+          <div>
+            <dt>Adresa</dt>
+            <dd>Alije Izetbegovića 15, Kakanj</dd>
+          </div>
+          <div>
+            <dt>Ambijent</dt>
+            <dd>Kafa, nargila i druženje</dd>
+          </div>
+        </dl>
+        <a href="#contact" class="text-link">Kako do nas</a>
+      </article>
+
+      <figure class="lounge-image">
+        <img src="assets/img/476373582_17980328069803579_2840000815807261178_n.jpg" alt="Enterijer nargila caffe bara Parlament">
+      </figure>
+
+      <article class="hours-copy">
+        <p class="eyebrow">Ponuda dana</p>
+        <h2>Parlament paket</h2>
+        <p>Svaki dan<br>07:00 - 23:00</p>
+        <p>Klasična nargila uz čaj od nane<br>Espresso i voda uz jutarnju pauzu</p>
+        <p>Kuća prirode sokovi, Jana i Sarajevski kiseljak uvijek na stanju</p>
+        <a href="#menu" class="text-link">Pogledaj ponudu</a>
+      </article>
+    </section>
+
+    <section class="atmosphere-band reveal" aria-label="Detalj caffe bara sa čašama i zelenilom"></section>
+
+    <section class="gallery-section reveal" id="atmosfera">
+      <div class="section-heading">
+        <p class="eyebrow">Atmosfera</p>
+        <h2>Galerija Parlamenta</h2>
+        <p>Originalne fotografije prostora, druzenja i vecernjeg ambijenta.</p>
+      </div>
+
+      <div class="gallery-grid" aria-label="Galerija atmosfere">
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/476373582_17980328069803579_2840000815807261178_n.jpg" data-lightbox-alt="Parlament atmosfera 1">
+          <img src="assets/img/476373582_17980328069803579_2840000815807261178_n.jpg" alt="Parlament atmosfera 1" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/497897772_17991769274803579_6275967440067032338_n.jpg" data-lightbox-alt="Parlament atmosfera 2">
+          <img src="assets/img/497897772_17991769274803579_6275967440067032338_n.jpg" alt="Parlament atmosfera 2" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/497978483_17991543371803579_88262535750808811_n.jpg" data-lightbox-alt="Parlament atmosfera 3">
+          <img src="assets/img/497978483_17991543371803579_88262535750808811_n.jpg" alt="Parlament atmosfera 3" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/498170764_17991769292803579_2752024177095307021_n.jpg" data-lightbox-alt="Parlament atmosfera 4">
+          <img src="assets/img/498170764_17991769292803579_2752024177095307021_n.jpg" alt="Parlament atmosfera 4" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/498551682_17991769307803579_6766330857496701135_n.jpg" data-lightbox-alt="Parlament atmosfera 5">
+          <img src="assets/img/498551682_17991769307803579_6766330857496701135_n.jpg" alt="Parlament atmosfera 5" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/508681936_17995587458803579_2138608678612531831_n.jpg" data-lightbox-alt="Parlament atmosfera 6">
+          <img src="assets/img/508681936_17995587458803579_2138608678612531831_n.jpg" alt="Parlament atmosfera 6" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/509156812_17995587485803579_803106200419741733_n.jpg" data-lightbox-alt="Parlament atmosfera 7">
+          <img src="assets/img/509156812_17995587485803579_803106200419741733_n.jpg" alt="Parlament atmosfera 7" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/580935711_18012454949803579_4450935699667347090_n.jpg" data-lightbox-alt="Parlament atmosfera 8">
+          <img src="assets/img/580935711_18012454949803579_4450935699667347090_n.jpg" alt="Parlament atmosfera 8" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/602273225_18016284923803579_9050313932464598947_n.jpg" data-lightbox-alt="Parlament atmosfera 9">
+          <img src="assets/img/602273225_18016284923803579_9050313932464598947_n.jpg" alt="Parlament atmosfera 9" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/621443524_18063590654640190_6317739899029832650_n.webp" data-lightbox-alt="Parlament atmosfera 10">
+          <img src="assets/img/621443524_18063590654640190_6317739899029832650_n.webp" alt="Parlament atmosfera 10" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/623960228_18198724414329478_2457382881368335751_n.jpg" data-lightbox-alt="Parlament atmosfera 11">
+          <img src="assets/img/623960228_18198724414329478_2457382881368335751_n.jpg" alt="Parlament atmosfera 11" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/624698305_18070901486158372_5865936977167452707_n.jpg" data-lightbox-alt="Parlament atmosfera 12">
+          <img src="assets/img/624698305_18070901486158372_5865936977167452707_n.jpg" alt="Parlament atmosfera 12" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/624706456_18110526811678711_4167190682852270643_n.webp" data-lightbox-alt="Parlament atmosfera 13">
+          <img src="assets/img/624706456_18110526811678711_4167190682852270643_n.webp" alt="Parlament atmosfera 13" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/624830170_18200370106332498_4497468922824819622_n.jpg" data-lightbox-alt="Parlament atmosfera 14">
+          <img src="assets/img/624830170_18200370106332498_4497468922824819622_n.jpg" alt="Parlament atmosfera 14" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/625055461_18208079725320328_7796978648880777700_n.jpg" data-lightbox-alt="Parlament atmosfera 15">
+          <img src="assets/img/625055461_18208079725320328_7796978648880777700_n.jpg" alt="Parlament atmosfera 15" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/625060100_18099442393921169_5371497018771085082_n.jpg" data-lightbox-alt="Parlament atmosfera 16">
+          <img src="assets/img/625060100_18099442393921169_5371497018771085082_n.jpg" alt="Parlament atmosfera 16" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/625271125_18112146268652456_6417506485764010180_n.jpg" data-lightbox-alt="Parlament atmosfera 17">
+          <img src="assets/img/625271125_18112146268652456_6417506485764010180_n.jpg" alt="Parlament atmosfera 17" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/628331668_18340654840212422_5162103115032859309_n.jpg" data-lightbox-alt="Parlament atmosfera 18">
+          <img src="assets/img/628331668_18340654840212422_5162103115032859309_n.jpg" alt="Parlament atmosfera 18" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/645513756_122102698418473615_1624489612639994158_n.jpg" data-lightbox-alt="Parlament atmosfera 19">
+          <img src="assets/img/645513756_122102698418473615_1624489612639994158_n.jpg" alt="Parlament atmosfera 19" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/649560072_18025562966803579_3562281665478832832_n.jpg" data-lightbox-alt="Parlament atmosfera 20">
+          <img src="assets/img/649560072_18025562966803579_3562281665478832832_n.jpg" alt="Parlament atmosfera 20" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/649886760_18025562975803579_7940692930588944335_n.jpg" data-lightbox-alt="Parlament atmosfera 21">
+          <img src="assets/img/649886760_18025562975803579_7940692930588944335_n.jpg" alt="Parlament atmosfera 21" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/653660714_18097208554971057_521525805437910393_n.jpg" data-lightbox-alt="Parlament atmosfera 22">
+          <img src="assets/img/653660714_18097208554971057_521525805437910393_n.jpg" alt="Parlament atmosfera 22" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/654014828_18093432074120773_5193140089433168539_n.jpg" data-lightbox-alt="Parlament atmosfera 23">
+          <img src="assets/img/654014828_18093432074120773_5193140089433168539_n.jpg" alt="Parlament atmosfera 23" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/654399724_18077522024627328_2677160439099812399_n.jpg" data-lightbox-alt="Parlament atmosfera 24">
+          <img src="assets/img/654399724_18077522024627328_2677160439099812399_n.jpg" alt="Parlament atmosfera 24" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/655537645_18077056610421223_3794610088855264105_n.jpg" data-lightbox-alt="Parlament atmosfera 25">
+          <img src="assets/img/655537645_18077056610421223_3794610088855264105_n.jpg" alt="Parlament atmosfera 25" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/656306191_18195920404358008_2990626004437872354_n.jpg" data-lightbox-alt="Parlament atmosfera 26">
+          <img src="assets/img/656306191_18195920404358008_2990626004437872354_n.jpg" alt="Parlament atmosfera 26" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/656472048_18142969342437245_2153251248811877387_n.jpg" data-lightbox-alt="Parlament atmosfera 27">
+          <img src="assets/img/656472048_18142969342437245_2153251248811877387_n.jpg" alt="Parlament atmosfera 27" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/656545752_18099576808755440_7037068736340331049_n.jpg" data-lightbox-alt="Parlament atmosfera 28">
+          <img src="assets/img/656545752_18099576808755440_7037068736340331049_n.jpg" alt="Parlament atmosfera 28" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/656816413_18027385676803579_4186048771761945106_n.jpg" data-lightbox-alt="Parlament atmosfera 29">
+          <img src="assets/img/656816413_18027385676803579_4186048771761945106_n.jpg" alt="Parlament atmosfera 29" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/660428078_18355189912233167_8682311392971133201_n.jpg" data-lightbox-alt="Parlament atmosfera 30">
+          <img src="assets/img/660428078_18355189912233167_8682311392971133201_n.jpg" alt="Parlament atmosfera 30" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/662741952_18188931271370657_3223126856255112884_n.jpg" data-lightbox-alt="Parlament atmosfera 31">
+          <img src="assets/img/662741952_18188931271370657_3223126856255112884_n.jpg" alt="Parlament atmosfera 31" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/670417979_17948012207984272_7020337719397950518_n.jpg" data-lightbox-alt="Parlament atmosfera 32">
+          <img src="assets/img/670417979_17948012207984272_7020337719397950518_n.jpg" alt="Parlament atmosfera 32" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/673221129_17972269209050780_4418770938735323849_n.jpg" data-lightbox-alt="Parlament atmosfera 33">
+          <img src="assets/img/673221129_17972269209050780_4418770938735323849_n.jpg" alt="Parlament atmosfera 33" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/719427260_18037968083803579_9030676166381997113_n.jpg" data-lightbox-alt="Parlament atmosfera 34">
+          <img src="assets/img/719427260_18037968083803579_9030676166381997113_n.jpg" alt="Parlament atmosfera 34" loading="lazy">
+        </button>
+        <button class="gallery-button" type="button" data-lightbox-src="assets/img/726782631_18039353141803579_779045900772943326_n.jpg" data-lightbox-alt="Parlament atmosfera 35">
+          <img src="assets/img/726782631_18039353141803579_779045900772943326_n.jpg" alt="Parlament atmosfera 35" loading="lazy">
+        </button>
+      </div>
+    </section>
+
+    <section class="recommend-section reveal" id="menu">
+      <div class="section-heading">
+        <p class="eyebrow">Meni kuće</p>
+        <h2>Parlament preporučuje</h2>
+        <p>Nargile, domaća kafa, sokovi i osvježenja za dnevno druženje i večernji izlazak.</p>
+      </div>
+
+      <div class="recommend-grid">
+        <div class="menu-list" aria-label="Preporučene stavke menija">
+          <article class="menu-item">
+            <div>
+              <h3>Klasična nargila</h3>
+              <p>Dvije jabuke, grožđe, menta ili miks po izboru</p>
+            </div>
+            <span>15 KM</span>
+          </article>
+          <article class="menu-item">
+            <div>
+              <h3>Parlament specijal</h3>
+              <p>Premium duhan, ledeno crijevo i preporuka osoblja</p>
+            </div>
+            <span>20 KM</span>
+          </article>
+          <article class="menu-item">
+            <div>
+              <h3>Espresso / kafa</h3>
+              <p>Kratki espresso, kafa sa mlijekom ili domaća kafa</p>
+            </div>
+            <span>2.50 KM</span>
+          </article>
+          <article class="menu-item">
+            <div>
+              <h3>Kuća prirode sokovi</h3>
+              <p>Borovnica, jabuka, narandža i sezonski ukusi</p>
+            </div>
+            <span>4 KM</span>
+          </article>
+          <article class="menu-item">
+            <div>
+              <h3>Jana</h3>
+              <p>Prirodna negazirana voda</p>
+            </div>
+            <span>2.50 KM</span>
+          </article>
+          <article class="menu-item">
+            <div>
+              <h3>Sarajevski kiseljak</h3>
+              <p>Mineralna voda, gazirana i rashlađena</p>
+            </div>
+            <span>2.50 KM</span>
+          </article>
+          <article class="menu-item">
+            <div>
+              <h3>Cijeđena limunada</h3>
+              <p>Svježi limun, menta i led</p>
+            </div>
+            <span>4 KM</span>
+          </article>
+          <article class="menu-item">
+            <div>
+              <h3>Kolač dana</h3>
+              <p>Čokoladni, voćni ili kremasti izbor uz kafu</p>
+            </div>
+            <span>5 KM</span>
+          </article>
+          <a class="outline-button menu-button" href="#reservations">Rezerviši nargilu</a>
+        </div>
+
+        <figure class="recommend-image">
+          <img src="assets/img/509156812_17995587485803579_803106200419741733_n.jpg" alt="Priprema osvjezavajuceg pica za goste">
+        </figure>
+      </div>
+    </section>
+
+    <section class="promo-grid reveal" id="promotions" aria-label="Ponuda i lokacija">
+      <article class="promo-tile">
+        <img src="assets/img/654014828_18093432074120773_5193140089433168539_n.jpg" alt="Osvjezavajuce pice u lounge ambijentu">
+        <div>
+          <h2>Dnevna kafa</h2>
+          <a href="#reservations">Rezerviši mjesto</a>
+        </div>
+      </article>
+      <article class="promo-tile">
+        <img src="assets/img/623960228_18198724414329478_2457382881368335751_n.jpg" alt="Detalj lokala Parlament u centru Kaknja">
+        <div>
+          <h2>Centar Kaknja</h2>
+          <a href="#contact">Kontakt</a>
+        </div>
+      </article>
+      <article class="promo-tile">
+        <img src="assets/img/654399724_18077522024627328_2677160439099812399_n.jpg" alt="Priprema pica u caffe baru">
+        <div>
+          <h2>Sećije za društvo</h2>
+          <a href="#reservations">Pošalji upit</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <div class="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Pregled fotografije">
+    <button class="lightbox-close" type="button" aria-label="Zatvori galeriju"></button>
+    <button class="lightbox-control lightbox-prev" type="button" aria-label="Prethodna fotografija"></button>
+    <img class="lightbox-image" src="" alt="">
+    <button class="lightbox-control lightbox-next" type="button" aria-label="Sljedeca fotografija"></button>
+  </div>
+
+  <footer class="site-footer" id="contact">
+    <section class="footer-column">
+      <h2>Parlament</h2>
+      <p>Nargila caffe bar u Kaknju za jutarnju kafu, lagano druženje, nargilu i osvježenje u opuštenom ambijentu.</p>
+      <ul class="contact-list">
+        <li>Pon-Ned: 07:00 - 23:00</li>
+        <li>Alije Izetbegovića 15, Kakanj</li>
+        <li>Rezervacije preko Instagrama ili telefona</li>
+      </ul>
+    </section>
+
+    <section class="footer-column">
+      <h2>Stranice</h2>
+      <nav aria-label="Navigacija u podnožju">
+        <a href="#home">Početna</a>
+        <a href="#reservations">Rezervacije</a>
+        <a href="#atmosfera">Atmosfera</a>
+        <a href="#menu">Meni</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+    </section>
+
+    <section class="footer-column">
+      <h2>Radno vrijeme</h2>
+      <p>Ponedjeljak - Petak:<br>07:00 - 23:00</p>
+      <p>Subota - Nedjelja:<br>07:00 - 23:00</p>
+    </section>
+
+    <section class="footer-column">
+      <h2>Instagram</h2>
+      <div class="instagram-grid" aria-label="Instagram galerija fotografija">
+        <img src="assets/img/656545752_18099576808755440_7037068736340331049_n.jpg" alt="Parlament fotografija 1">
+        <img src="assets/img/656816413_18027385676803579_4186048771761945106_n.jpg" alt="Parlament fotografija 2">
+        <img src="assets/img/660428078_18355189912233167_8682311392971133201_n.jpg" alt="Parlament fotografija 3">
+        <img src="assets/img/662741952_18188931271370657_3223126856255112884_n.jpg" alt="Parlament fotografija 4">
+        <img src="assets/img/670417979_17948012207984272_7020337719397950518_n.jpg" alt="Parlament fotografija 5">
+        <img src="assets/img/673221129_17972269209050780_4418770938735323849_n.jpg" alt="Parlament fotografija 6">
+      </div>
+    </section>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Nazad na vrh">Vrh</button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
