@@ -230,8 +230,8 @@ test('page exposes the responsive single-page structure', () => {
   assert.match(html, /href="#atmosfera"/);
   assert.match(html, /class="gallery-grid"/);
   assert.match(html, /class="lightbox"/);
-  assert.match(html, /viber:\/\/chat\?number=38761967914\//);
-  assert.match(html, /Viber: 061 967 914/);
+  assert.match(html, /viber:\/\/chat\?number=387644421927\//);
+  assert.match(html, /Viber: 064 442 1927/);
 });
 
 test('all referenced local visual assets use the original image folder and exist', () => {
@@ -285,7 +285,7 @@ test('script toggles nav, submits booking feedback, and scrolls to top', () => {
   assert.ok(prevented, 'booking submit prevents navigation');
   assert.match(browser.bookingStatus.textContent, /Otvaramo Viber/);
   assert.ok(browser.bookingStatus.classList.contains('is-visible'));
-  assert.match(browser.window.location.href, /^viber:\/\/chat\?number=38761967914\/$/);
+  assert.match(browser.window.location.href, /^viber:\/\/chat\?number=387644421927\/$/);
 
   browser.backToTop.dispatch('click');
   const scrollCall = browser.scrollCalls.pop();
