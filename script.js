@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const viberChatUrl = 'viber://add?number=%2B387644421927';
+  const viberChatUrl = 'viber://chat?number=38761967914/';
   const body = document.body;
   const navToggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('.site-nav');
