@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const viberChatUrl = 'viber://chat?number=387644421927&text=Po%C5%A1tovanje%2C%20imam%20pitanje%20vezano%20za%20va%C5%A1%20hookah%20bar';
   const body = document.body;
   const navToggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('.site-nav');
@@ -54,8 +55,9 @@ document.addEventListener('DOMContentLoaded', () => {
         bookingStatus.classList.add('is-visible');
         return;
       }
-      bookingStatus.textContent = 'Zahtjev za rezervaciju je zabilježen. Ekipa Parlamenta će uskoro potvrditi sto.';
+      bookingStatus.textContent = 'Otvaramo Viber za slanje upita.';
       bookingStatus.classList.add('is-visible');
+      window.location.href = viberChatUrl;
     });
   }
 
